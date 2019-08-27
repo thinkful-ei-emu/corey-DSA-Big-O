@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* 
 -Number 1---------------------------------------------------------------
 
@@ -152,7 +153,7 @@ function efficientSearch(array, item) {
     return -1;
 }
 
-A) This function is Logarithmic time o(log(n)), it is a search function with some
+A) This function is Logarithmic time O(log(n)), it is a search function with some
     built in efficiancies like finding the center of the array. Then compares
     the middle of the array to the item passed in. So instead of searching from
     beginning to end, this search starts in the middle and works outwards,
@@ -165,22 +166,131 @@ function findRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-A)
+A) This function is O(n) the time in which it will take to complete will vary depending
+    on the size of the array. It may also be O(1) beacuse the only thing that will change
+    is the contents of the array.
 
 
 -Number 10---------------------------------------------------------------
 
-A)
+function isWhat(n) {
+    if (n < 2 || n % 1 != 0) {
+        return false;
+    }
+    for (let i = 2; i < n; ++i) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+
+A) This function is looking for a number greater than two that is odd.
+    My guess is O(n)
 
 
 -Number 11---------------------------------------------------------------
-
-A)
-
-
-
 */
+// function print(S,D){
+//   console.log(`${S} -> ${D}`);
+// }
+
+// function TOH(n, source, dest, temp){
+//   if(n===1){
+//     print(source, dest);           //A->B
+
+//   } else {
+//     TOH(n-1, source, temp, dest);  //2->1
+
+//     TOH(1, source, dest, temp);
+
+//     TOH(n-1, temp, dest, source);
+//   }   
+// }
+
+// TOH(3,'A','C','B');
+
+
+//-Number 12---------------------------------------------------------------
+
+// 12-1
+// function sheepSleep(sheep) {
+//   let n = sheep;
+
+//   for (let i = 1; i <= n; i++) {
+//     console.log('Another one');
+
+//     if (i === n) {
+//       console.log('All sheep jumped over the fence');
+//     }
+//   }
+// }
+// sheepSleep(5);
+
+
+// 12-2-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// function powerCalculator(base, exp){
+  
+//   if(exp < 0) {
+//     return 'exponent should be greater than or equal to 0';
+//   }
+//   if(exp === 0) {
+//     return 1;
+//   }
+
+//   const calc = Math.pow(base, exp);
+//   console.log(calc);
+// }
+// powerCalculator(10,2);
+
+
+// 12-3-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// function reverseString(str) {
+//   if (str.length <= 1) {
+//     return 'Please enter a string of more than 1 character';
+//   }
+
+/* const stringSplit = str.split('');
+   console.log(stringSplit);
+
+   const reverseString = stringSplit.reverse();
+   console.log(reverseString);
+
+   const joinString = reverseString.join('');
+
+   return console.log(joinString);
+
+  OR */
+
+//   const drow = str.split('').reverse().join('');
+//   return console.log(drow);
+
+// }
+// reverseString('computer');
+
+
+// 12-4-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// function triangularNum(n) {
+//   return console.log(n * (n+1) /2);
+// }
+// triangularNum(4);
+
+
+// 12-5-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+// function stringSplitter(str) {
 
 
 
- 
+// }
+// stringSplitter('02/20/2020');
+
+// 12-6-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+// 12-7-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+
+// -Number 13---------------------------------------------------------------
+
+
+// -Number 14---------------------------------------------------------------
+
+
+// END
